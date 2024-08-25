@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPEN IT Chrissnaaa</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Full-page styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: radial-gradient(circle, rgba(255, 0, 0, 0.8), rgba(255, 105, 105, 0.8));
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        /* Container for centered content */
+        .container {
+            text-align: center;
+            position: relative;
+        }
+
+        /* Animated and styled message */
+        .message {
+            font-size: 4rem;
+            color: #fff;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+            animation: bounce 2s infinite;
+            margin-bottom: 10px;
+        }
+
+        /* Heart emoji styling */
+        .heart {
+            font-size: 5rem;
+            color: red;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        /* Animation effects */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        /* Additional decorative element */
+        .sparkle {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+            background-size: 100px 100px;
+            animation: sparkle 1.5s infinite;
+            z-index: -1;
+        }
+
+        @keyframes sparkle {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 100px 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message">Sorry! Chrissnaa</div>
+        <div class="heart">❤️</div>
+    </div>
+    <div class="sparkle"></div>
+</body>
+</html>
